@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark The Presence Easily"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+    <Button
+            android:id="@+id/displayStudentsListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Students List"
+            android:layout_below="@id/titleTextView"
+            android:layout_alignStart="@id/scanButton"
+            android:layout_marginTop="16dp" android:layout_marginStart="-31dp"/>
+    <Button
+            android:id="@+id/scanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Scanning"
+            android:layout_below="@id/displayStudentsListButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+    <!--    <Button-->
+    <!--            android:id="@+id/stopScanButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Stop Scanning"-->
+    <!--            android:layout_below="@id/scanButton"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="16dp"/>-->
+
+    <ListView
+            android:id="@+id/studentListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/scanButton"
+            android:layout_above="@+id/generateCsvButton"
+            android:layout_marginTop="16dp"/>
+
+    <Button
+            android:id="@+id/generateCsvButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate The Attendance List"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
